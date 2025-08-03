@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,16 +40,14 @@
       display: block;
       margin-bottom: 6px;
     }
-    .slider-labels {
+    .options {
       display: flex;
       justify-content: space-between;
-      font-size: 14px;
-      color: #555;
-      margin-top: 4px;
+      gap: 10px;
+      flex-wrap: wrap;
     }
-    input[type=range] {
-      width: 100%;
-      margin-top: 8px;
+    .options label {
+      font-weight: normal;
     }
     textarea {
       width: 100%;
@@ -85,13 +82,23 @@
         <h2>Voice & User Experience</h2>
         <div class="question">
           <label>🎤 How easy was it to interact with NURI using your voice?</label>
-          <input type="range" min="1" max="5" />
-          <div class="slider-labels"><span>Hard to use</span><span>Very easy</span></div>
+          <div class="options">
+            <label><input type="radio" name="voice" value="1"> 1</label>
+            <label><input type="radio" name="voice" value="2"> 2</label>
+            <label><input type="radio" name="voice" value="3"> 3</label>
+            <label><input type="radio" name="voice" value="4"> 4</label>
+            <label><input type="radio" name="voice" value="5"> 5</label>
+          </div>
         </div>
         <div class="question">
           <label>🔊 How clearly did NURI speak and explain things?</label>
-          <input type="range" min="1" max="5" />
-          <div class="slider-labels"><span>Not clear</span><span>Very clear</span></div>
+          <div class="options">
+            <label><input type="radio" name="clarity" value="1"> 1</label>
+            <label><input type="radio" name="clarity" value="2"> 2</label>
+            <label><input type="radio" name="clarity" value="3"> 3</label>
+            <label><input type="radio" name="clarity" value="4"> 4</label>
+            <label><input type="radio" name="clarity" value="5"> 5</label>
+          </div>
         </div>
       </div>
 
@@ -99,13 +106,23 @@
         <h2>Nutrition Advice & Relevance</h2>
         <div class="question">
           <label>🍽️ How helpful was the nutrition advice?</label>
-          <input type="range" min="1" max="5" />
-          <div class="slider-labels"><span>Not helpful</span><span>Very helpful</span></div>
+          <div class="options">
+            <label><input type="radio" name="advice" value="1"> 1</label>
+            <label><input type="radio" name="advice" value="2"> 2</label>
+            <label><input type="radio" name="advice" value="3"> 3</label>
+            <label><input type="radio" name="advice" value="4"> 4</label>
+            <label><input type="radio" name="advice" value="5"> 5</label>
+          </div>
         </div>
         <div class="question">
           <label>🌍 Was the advice relevant to your food preferences?</label>
-          <input type="range" min="1" max="5" />
-          <div class="slider-labels"><span>Not relevant</span><span>Very relevant</span></div>
+          <div class="options">
+            <label><input type="radio" name="relevance" value="1"> 1</label>
+            <label><input type="radio" name="relevance" value="2"> 2</label>
+            <label><input type="radio" name="relevance" value="3"> 3</label>
+            <label><input type="radio" name="relevance" value="4"> 4</label>
+            <label><input type="radio" name="relevance" value="5"> 5</label>
+          </div>
         </div>
       </div>
 
@@ -113,13 +130,23 @@
         <h2>Daily Life Impact</h2>
         <div class="question">
           <label>⚡ Have your energy levels changed?</label>
-          <input type="range" min="1" max="5" />
-          <div class="slider-labels"><span>More tired</span><span>More energetic</span></div>
+          <div class="options">
+            <label><input type="radio" name="energy" value="1"> 1</label>
+            <label><input type="radio" name="energy" value="2"> 2</label>
+            <label><input type="radio" name="energy" value="3"> 3</label>
+            <label><input type="radio" name="energy" value="4"> 4</label>
+            <label><input type="radio" name="energy" value="5"> 5</label>
+          </div>
         </div>
         <div class="question">
           <label>😴 Did your sleep improve?</label>
-          <input type="range" min="1" max="5" />
-          <div class="slider-labels"><span>No improvement</span><span>Sleeping better</span></div>
+          <div class="options">
+            <label><input type="radio" name="sleep" value="1"> 1</label>
+            <label><input type="radio" name="sleep" value="2"> 2</label>
+            <label><input type="radio" name="sleep" value="3"> 3</label>
+            <label><input type="radio" name="sleep" value="4"> 4</label>
+            <label><input type="radio" name="sleep" value="5"> 5</label>
+          </div>
         </div>
       </div>
 
@@ -127,13 +154,23 @@
         <h2>Practicality & Recommendation</h2>
         <div class="question">
           <label>🛒 Are NURI's suggestions easy to find in local shops?</label>
-          <input type="range" min="1" max="5" />
-          <div class="slider-labels"><span>Hard to find</span><span>Very accessible</span></div>
+          <div class="options">
+            <label><input type="radio" name="availability" value="1"> 1</label>
+            <label><input type="radio" name="availability" value="2"> 2</label>
+            <label><input type="radio" name="availability" value="3"> 3</label>
+            <label><input type="radio" name="availability" value="4"> 4</label>
+            <label><input type="radio" name="availability" value="5"> 5</label>
+          </div>
         </div>
         <div class="question">
           <label>💬 Would you recommend NURI to others?</label>
-          <input type="range" min="1" max="5" />
-          <div class="slider-labels"><span>No</span><span>Definitely</span></div>
+          <div class="options">
+            <label><input type="radio" name="recommend" value="1"> 1</label>
+            <label><input type="radio" name="recommend" value="2"> 2</label>
+            <label><input type="radio" name="recommend" value="3"> 3</label>
+            <label><input type="radio" name="recommend" value="4"> 4</label>
+            <label><input type="radio" name="recommend" value="5"> 5</label>
+          </div>
         </div>
       </div>
 
